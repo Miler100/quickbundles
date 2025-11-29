@@ -1,12 +1,216 @@
-<<!doctype html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Quick Bundles</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick Bundles — Fast Data & Instant Checkers</title>
+
+  <!-- Styles & scripts (must match filenames in your repo) -->
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
-  <h1>Quick Bundles Test Page</h1>
-  <p>If this shows on your website, everything works!</p>
+
+  <!-- PRELOADER -->
+  <div id="qb-preloader" aria-hidden="true">
+    <div class="qb-spinner"><div class="dot"></div></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand" aria-hidden="false">
+        <img src="logo.png" alt="Quick Bundles logo" class="logo">
+        <div class="brand-name">Quick Bundles</div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="bundles.html">Bundles</a>
+        <a href="checkers.html">Checkers</a>
+        <a href="payment.html">Payment</a>
+        <a href="tracking.html">Track</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Fast Data Bundles & Instant Results Checkers</h1>
+        <p class="lead">Pure, secure delivery — MTN Mobile Money payments. Instant checkers & reliable bundles.</p>
+
+        <div class="cta-row">
+          <a class="btn-buy" href="bundles.html">Buy Bundles</a>
+          <a class="btn-ghost" href="checkers.html">Buy Checkers</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>MTN • Telecel • AirtelTigo</strong></div>
+          <div class="small muted">Orders delivered via WhatsApp confirmation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="container" aria-labelledby="services-head">
+      <div class="section-head" id="services-head">
+        <h2>Our Services</h2>
+        <p class="muted">Bundles, exam checkers and admission checks — quick and safe.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <img src="mtn.png" class="option-icon" alt="MTN">
+          </div>
+          <h4>Data Bundles</h4>
+          <p>Small, medium & large packs — competitive prices and instant delivery.</p>
+          <a class="btn-buy" href="bundles.html">View Bundles</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <img src="checker.png" class="option-icon" alt="Checkers">
+          </div>
+          <h4>Results Checkers</h4>
+          <p>BECE & WASSCE voucher codes delivered immediately after payment confirmation.</p>
+          <a class="btn-buy" href="checkers.html">Buy Checkers</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <img src="admission.png" class="option-icon" alt="Admission">
+          </div>
+          <h4>University Admission</h4>
+          <p>Admission checks across Ghanaian universities. Quick and reliable.</p>
+          <a class="btn-buy" href="checkers.html">Check Admission</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- POPULAR PACKS -->
+    <section class="hero" aria-labelledby="popular-head" style="margin-top:28px;">
+      <div class="container">
+        <div class="section-head" id="popular-head">
+          <h2>Popular Bundles</h2>
+          <p class="muted">1GB from GHS 5.4 — great value for everyday browsing.</p>
+        </div>
+        <div class="grid" style="margin-top:12px;">
+          <div class="card">
+            <h4>1GB</h4>
+            <p class="muted">Light browsing & WhatsApp</p>
+            <div style="margin-top:10px;"><a class="btn-buy" href="bundles.html">Buy 1GB</a></div>
+          </div>
+
+          <div class="card">
+            <h4>5GB</h4>
+            <p class="muted">Streaming & social</p>
+            <div style="margin-top:10px;"><a class="btn-buy" href="bundles.html">Buy 5GB</a></div>
+          </div>
+
+          <div class="card">
+            <h4>30GB</h4>
+            <p class="muted">Power user plan</p>
+            <div style="margin-top:10px;"><a class="btn-buy" href="bundles.html">Buy 30GB</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="container" style="margin-top:28px;">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p class="muted">Three simple steps to complete your purchase.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h4>1. Choose</h4>
+          <p>Select the bundle or checker and enter recipient phone.</p>
+        </div>
+        <div class="card">
+          <h4>2. Pay</h4>
+          <p>Use MTN Mobile Money to send payment to 0534226481.</p>
+        </div>
+        <div class="card">
+          <h4>3. Confirm</h4>
+          <p>Confirm payment on WhatsApp and receive the service instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="container" style="margin-top:28px;">
+      <div class="section-head">
+        <h2>Customer feedback</h2>
+        <p class="muted">Real customers, real results.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>"Got my WASSCE checker in less than a minute. Highly recommended."</p>
+          <div class="small muted">— Ama, Accra</div>
+        </article>
+
+        <article class="card">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>"Fast and reliable bundles. Never had issues."</p>
+          <div class="small muted">— Kofi, Kumasi</div>
+        </article>
+
+        <article class="card">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>"Admission check was quick and accurate."</p>
+          <div class="small muted">— Abena, Takoradi</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;justify-content:space-between;">
+      <div>
+        <div style="font-weight:800;font-size:18px;">Quick Bundles</div>
+        <div class="muted small" style="margin-top:6px;">Fast data bundles & instant checkers • MTN payments</div>
+      </div>
+
+      <div style="display:flex;gap:18px;flex-wrap:wrap;">
+        <div>
+          <div style="font-weight:700;margin-bottom:6px;">Quick Links</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <a href="index.html">Home</a>
+            <a href="bundles.html">Bundles</a>
+            <a href="checkers.html">Checkers</a>
+            <a href="tracking.html">Track</a>
+            <a href="payment.html">Payment</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-weight:700;margin-bottom:6px;">Contact</div>
+          <div class="muted">0534226481</div>
+          <a href="mailto:mohammedkabiru104@gmail.com" class="muted small">mohammedkabiru104@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;color:var(--muted);font-size:13px;margin-top:18px;">
+      © 2025 Quick Bundles • All rights reserved
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/233534226481" class="float-whatsapp" target="_blank" aria-label="WhatsApp">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
+
 </body>
 </html>
-!-- index.html placeholder -->
