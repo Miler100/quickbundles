@@ -1,53 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — Quick Bundles</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — Quick Bundles</title>
+
+  <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
-    <div class="brand"><img src="logo.png" class="logo" alt="Quick Bundles"><div class="brand-name">Quick Bundles</div></div>
+    <div class="brand">
+      <img src="logo.png" class="logo" alt="Quick Bundles logo">
+      <div class="brand-name">Quick Bundles</div>
+    </div>
+
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="bundles.html">Bundles</a>
       <a href="checkers.html">Checkers</a>
       <a href="payment.html">Payment</a>
-      <a href="tracking.html">Track Order</a>
+      <a href="tracking.html">Track</a>
       <a href="faq.html">FAQ</a>
+      <a href="about.html" aria-current="page">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h2>About Quick Bundles</h2>
-  <p class="lead">We provide instant data bundles and exam checkers with fast delivery and trusted service.</p>
+  <div class="container">
+    <h1>About Quick Bundles</h1>
+    <p class="lead">Fast, secure, and reliable delivery of data bundles and exam checkers.</p>
+  </div>
 </section>
 
+<!-- ABOUT CONTENT -->
 <section class="container">
-  <div class="section-head"><h2>Our Mission</h2><p class="muted">To make digital services accessible and reliable for everyone.</p></div>
-  <div class="card"><h4>Fast Delivery</h4><p>We prioritise quick delivery and clear communication.</p></div>
-  <div class="card" style="margin-top:12px;"><h4>Trusted Service</h4><p>Our team ensures accuracy and prompt support.</p></div>
-  <div class="card" style="margin-top:12px;"><h4>Secure Payments</h4><p>We accept secure MTN MoMo payments and confirm each order via WhatsApp.</p></div>
-</section>
 
-<footer class="site-footer">
-  <div style="max-width:1100px;margin:0 auto;padding:18px 22px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;">
-    <div style="min-width:200px;"><div style="font-weight:700">Quick Bundles</div><div style="color:var(--muted);font-size:14px;margin-top:6px;">Fast data bundles & instant checkers</div></div>
-    <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
-      <div><div style="font-weight:700;margin-bottom:6px;">Quick Links</div><div style="display:flex;flex-direction:column;gap:4px;font-size:14px;"><a href="index.html">Home</a><a href="bundles.html">Bundles</a><a href="checkers.html">Checkers</a></div></div>
-      <div><div style="font-weight:700;margin-bottom:6px;">Contact</div><div style="font-size:14px;color:var(--muted);">0534226481</div></div>
+  <div class="card" style="max-width:850px; margin:auto; padding:28px;">
+    <h2 style="color:var(--gold); margin-bottom:10px;">Who We Are</h2>
+    <p class="muted" style="line-height:1.7; margin-bottom:20px;">
+      Quick Bundles is a digital service provider dedicated to offering fast, secure,
+      and reliable delivery of Data Bundles, BECE & WASSCE Results Checkers, and University Admission Checks.
+      We operate fully online, ensuring convenience and instant delivery for all users.
+    </p>
+
+    <h2 style="color:var(--gold); margin-bottom:10px;">Our Mission</h2>
+    <p class="muted" style="line-height:1.7; margin-bottom:20px;">
+      To provide the most affordable and seamless digital services in Ghana with
+      instant delivery and excellent customer support.
+    </p>
+
+    <h2 style="color:var(--gold); margin-bottom:10px;">Why Choose Us?</h2>
+
+    <ul class="muted" style="line-height:1.8; margin-bottom:20px; padding-left:18px;">
+      <li>Instant delivery after confirmation</li>
+      <li>Safe & trusted MTN MoMo payments</li>
+      <li>Reliable exam checkers & data bundles</li>
+      <li>Professional and friendly support</li>
+      <li>Affordable pricing</li>
+    </ul>
+
+    <div style="margin-top:20px;">
+      <a class="btn-buy" href="contact.html">Contact Us</a>
+      <a class="btn-ghost" href="payment.html" style="margin-left:10px;">How to Pay</a>
     </div>
   </div>
-  <div style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;padding-bottom:12px;">© 2025 Quick Bundles • All rights reserved</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div style="font-weight:700;font-size:18px;">Quick Bundles</div>
+    <div class="muted small" style="margin-top:6px;">Your trusted digital service provider</div>
+  </div>
+
+  <div style="text-align:center;color:var(--muted);font-size:13px;">
+    © 2025 Quick Bundles — All rights reserved
+  </div>
 </footer>
 
-<a href="https://wa.me/233534226481" class="float-whatsapp" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/233534226481" class="float-whatsapp">
+  <img src="whatsapp.png" alt="">
+</a>
 
 </body>
 </html>
