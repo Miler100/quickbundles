@@ -1,29 +1,20 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — Quick Bundles</title>
+  <title>Contact Us — Quick Bundles</title>
 
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
 </head>
-
 <body>
-
-<!-- PRELOADER -->
-<div id="qb-preloader">
-  <div class="qb-spinner">
-    <div class="dot"></div>
-  </div>
-</div>
 
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
-      <img src="logo.png" class="logo" alt="Quick Bundles">
+      <img src="logo.png" class="logo" alt="Quick Bundles logo">
       <div class="brand-name">Quick Bundles</div>
     </div>
 
@@ -32,7 +23,7 @@
       <a href="bundles.html">Bundles</a>
       <a href="checkers.html">Checkers</a>
       <a href="payment.html">Payment</a>
-      <a href="tracking.html">Track Order</a>
+      <a href="tracking.html">Track</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html" aria-current="page">Contact</a>
     </nav>
@@ -40,158 +31,72 @@
 </header>
 
 <!-- HERO -->
-<section class="hero fade-in">
-  <h2>Contact Us</h2>
-  <p class="lead">We're here to help you anytime.</p>
+<section class="hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="lead">We're here to help with your orders and questions.</p>
+  </div>
 </section>
 
-<!-- CONTACT CONTENT -->
+<!-- CONTACT FORM -->
 <section class="container">
+  <div class="card" style="max-width:600px; margin:auto;">
 
-  <div class="section-head slide-left">
-    <h2>Get in Touch</h2>
-    <p class="muted">Feel free to reach out for support or enquiries.</p>
-  </div>
+    <h3 style="color:var(--gold); text-align:center;">Send a Message</h3>
 
-  <div class="grid">
+    <form onsubmit="sendContactMessage(event)" style="margin-top:18px;">
 
-    <!-- Contact Card -->
-    <article class="card scale-up">
-      <h4>WhatsApp Support</h4>
-      <p>We respond instantly on WhatsApp. Click the button below.</p>
+      <label style="color:var(--gold); font-weight:700;">Full Name</label>
+      <input id="cname" type="text" required placeholder="Your name"
+        style="width:100%; padding:12px; margin:8px 0 15px; border-radius:var(--radius); background:#0f0f0f; border:1px solid var(--card-border); color:white;">
 
-      <a href="https://wa.me/233534226481"
-         class="btn-buy"
-         style="margin-top:10px;display:inline-block;">
-        Chat on WhatsApp
-      </a>
+      <label style="color:var(--gold); font-weight:700;">Phone Number</label>
+      <input id="cphone" type="text" required placeholder="Your phone"
+        style="width:100%; padding:12px; margin:8px 0 15px; border-radius:var(--radius); background:#0f0f0f; border:1px solid var(--card-border); color:white;">
 
-      <p class="small" style="margin-top:8px;color:var(--muted);">
-        Available 24/7 — quick replies guaranteed.
-      </p>
-    </article>
+      <label style="color:var(--gold); font-weight:700;">Email (Optional)</label>
+      <input id="cemail" type="email" placeholder="example@gmail.com"
+        style="width:100%; padding:12px; margin:8px 0 15px; border-radius:var(--radius); background:#0f0f0f; border:1px solid var(--card-border); color:white;">
 
-    <!-- Contact Info -->
-    <article class="card scale-up">
-      <h4>Business Contacts</h4>
+      <label style="color:var(--gold); font-weight:700;">Message</label>
+      <textarea id="cmsg" required placeholder="Type your message..."
+        style="width:100%; padding:12px; height:120px; margin:8px 0 15px; border-radius:var(--radius); background:#0f0f0f; border:1px solid var(--card-border); color:white;"></textarea>
 
-      <ul>
-        <li class="line">
-          <div class="line-left">Phone</div>
-          <div class="line-right">0534226481</div>
-        </li>
-
-        <li class="line">
-          <div class="line-left">Email</div>
-          <div class="line-right">
-            <a href="mailto:mohammedkabiru104@gmail.com" style="color:var(--text);text-decoration:none;">
-              mohammedkabiru104@gmail.com
-            </a>
-          </div>
-        </li>
-
-        <li class="line">
-          <div class="line-left">Location</div>
-          <div class="line-right">Ghana (Digital Services)</div>
-        </li>
-      </ul>
-
-    </article>
-
-  </div>
-
-  <!-- CONTACT FORM -->
-  <div class="section-head slide-left" style="margin-top:40px;">
-    <h2>Send Us a Message</h2>
-    <p class="muted">Fill the form below and we’ll reply quickly.</p>
-  </div>
-
-  <div class="card scale-up" style="max-width:650px;margin:0 auto;">
-    <form onsubmit="sendContactMessage(event)">
-      <input type="text" id="cname" placeholder="Your Name" required>
-      <input type="text" id="cphone" placeholder="Phone Number" required style="margin-top:10px;">
-      <input type="email" id="cemail" placeholder="Email (optional)" style="margin-top:10px;">
-      <textarea id="cmsg" placeholder="Write your message..." rows="4" required style="margin-top:10px;"></textarea>
-
-      <button class="btn-buy" style="margin-top:14px;width:100%;">Send Message</button>
+      <button class="btn-buy" type="submit" style="width:100%;">Send via WhatsApp</button>
     </form>
+
   </div>
 
+  <!-- CONTACT INFO BOX -->
+  <div class="card" style="max-width:600px; margin:20px auto; text-align:center;">
+    <h3 style="color:var(--gold); margin-bottom:10px;">Quick Contact Info</h3>
+
+    <p class="muted">Phone / WhatsApp:</p>
+    <p style="color:var(--gold); font-size:22px; font-weight:700;">0534226481</p>
+
+    <p class="muted" style="margin-top:8px;">Email:</p>
+    <p style="color:white;">mohammedkabiru104@gmail.com</p>
+
+    <a href="https://wa.me/233534226481" class="btn-ghost" style="margin-top:12px;">Chat on WhatsApp</a>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <div>
-    <div>
-      <div style="font-weight:700;">Quick Bundles</div>
-      <div style="color:var(--muted);font-size:14px;margin-top:6px;">
-        Fast bundles, instant checkers, and premium digital services.
-      </div>
-    </div>
-
-    <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
-      <div>
-        <div style="font-weight:700;margin-bottom:6px;">Quick Links</div>
-        <div style="display:flex;flex-direction:column;gap:4px;font-size:14px;">
-          <a href="index.html">Home</a>
-          <a href="bundles.html">Bundles</a>
-          <a href="checkers.html">Checkers</a>
-          <a href="tracking.html">Track Order</a>
-          <a href="payment.html">Payment</a>
-          <a href="faq.html">FAQ</a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-weight:700;margin-bottom:6px;">Contact</div>
-        <div style="font-size:14px;color:var(--muted);">0534226481</div>
-        <a href="mailto:mohammedkabiru104@gmail.com"
-           style="font-size:14px;color:var(--muted);text-decoration:none;margin-top:6px;display:inline-block;">
-          Email Support
-        </a>
-      </div>
-    </div>
+  <div class="container">
+    <div style="font-weight:700;font-size:18px;">Quick Bundles</div>
+    <div class="muted small" style="margin-top:6px;">Fast data bundles • Instant checkers</div>
   </div>
 
-  <div style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;padding-bottom:12px;">
-    © 2025 Quick Bundles • All rights reserved
+  <div style="text-align:center;color:var(--muted);font-size:13px;">
+    © 2025 Quick Bundles — All rights reserved
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
+<!-- WHATSAPP BUTTON -->
 <a href="https://wa.me/233534226481" class="float-whatsapp">
-  <img src="whatsapp.png" alt="WhatsApp">
+  <img src="whatsapp.png" alt="">
 </a>
-
-<script>
-function sendContactMessage(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("cname").value.trim();
-  const phone = document.getElementById("cphone").value.trim();
-  const email = document.getElementById("cemail").value.trim();
-  const msg = document.getElementById("cmsg").value.trim();
-
-  if (!name || !phone || !msg) {
-    alert("Please fill all required fields.");
-    return;
-  }
-
-  const message =
-`Hello Quick Bundles,
-A new contact message:
-
-Name: ${name}
-Phone: ${phone}
-Email: ${email || "N/A"}
-Message: ${msg}
-
-Sent from Contact Page.`;
-
-  window.open(`https://wa.me/233534226481?text=${encodeURIComponent(message)}`, "_blank");
-  alert("Opening WhatsApp…");
-}
-</script>
 
 </body>
 </html>
