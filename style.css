@@ -1,1 +1,257 @@
-/* style.css placeholder */
+/* ================================
+   Quick Bundles – Black & Gold Premium Theme
+   ================================ */
+
+/* GLOBAL COLORS */
+:root {
+  --black: #000000;
+  --gold: #f7c843;
+  --white: #ffffff;
+  --muted: #bbbbbb;
+  --card-bg: #111111;
+  --card-border: #1c1c1c;
+
+  --radius: 10px;
+  --transition: 0.25s ease;
+  --maxw: 1100px;
+  --font: 'Segoe UI', Arial, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LAYOUT */
+.container {
+  width: min(var(--maxw), 95%);
+  margin: auto;
+  padding: 25px 0;
+}
+
+/* HEADER */
+.site-header {
+  background: #060606;
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner {
+  width: min(var(--maxw), 95%);
+  margin: auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.brand-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.main-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 14px;
+}
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--gold);
+}
+
+/* HERO */
+.hero {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #0A0A0A, #000000);
+}
+.hero h1, .hero h2 {
+  color: var(--gold);
+  font-weight: 800;
+}
+.hero .lead {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 17px;
+}
+.cta-row {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* BUTTONS */
+.btn-buy,
+.btn-ghost {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: var(--transition);
+  font-weight: 600;
+}
+.btn-buy {
+  background: var(--gold);
+  color: var(--black);
+}
+.btn-buy:hover {
+  background: #ffdf6a;
+}
+.btn-ghost {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+.btn-ghost:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background: var(--card-bg);
+  padding: 18px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+.card h4 {
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+/* ICONS */
+.option-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* SECTION HEAD */
+.section-head {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.section-head h2 {
+  font-size: 26px;
+  color: var(--gold);
+  font-weight: 700;
+}
+.section-head .muted {
+  color: var(--muted);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #050505;
+  margin-top: 40px;
+  padding: 30px 0;
+  border-top: 1px solid var(--card-border);
+}
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: var(--gold);
+}
+
+/* FLOATING WHATSAPP */
+.float-whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 65px;
+  height: 65px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px #f7c84370;
+  transition: var(--transition);
+}
+.float-whatsapp:hover {
+  transform: scale(1.08);
+}
+.float-whatsapp img {
+  width: 35px;
+  height: 35px;
+}
+
+/* PRELOADER */
+#qb-preloader {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.qb-spinner .dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: pulse 0.7s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity:0.5; }
+  50% { transform: scale(1.1); opacity:1; }
+  100% { transform: scale(0.8); opacity:0.5; }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .main-nav {
+    gap: 10px;
+    font-size: 13px;
+  }
+  .cta-row {
+    flex-direction: column;
+  }
+}
