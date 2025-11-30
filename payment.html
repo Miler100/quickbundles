@@ -1,13 +1,91 @@
-<!-- Continued payment.html footer and rest -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment — Quick Bundles</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="logo.png" class="logo" alt="Quick Bundles logo">
+      <div class="brand-name">Quick Bundles</div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="bundles.html">Bundles</a>
+      <a href="checkers.html">Checkers</a>
+      <a href="payment.html" aria-current="page">Payment</a>
+      <a href="tracking.html">Track</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Payment Instructions</h1>
+    <p class="lead">We accept MTN Mobile Money only. Your order will be delivered instantly after confirmation.</p>
+  </div>
+</section>
+
+<!-- PAYMENT DETAILS -->
+<section class="container">
+
+  <div class="section-head">
+    <h2>Pay Using MTN</h2>
+    <p class="muted">Follow the steps below to complete your payment.</p>
   </div>
 
-  <div style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;padding-bottom:12px;">
-    © 2025 Quick Bundles • All rights reserved
+  <div class="card" style="text-align:left; max-width:600px; margin:auto;">
+    <h3 style="color:var(--gold);">MTN MoMo Number</h3>
+    <p class="muted" style="margin-top:8px; font-size:18px;">
+      <strong style="color:var(--gold); font-size:22px;">0534226481</strong><br>
+      Account Name: <strong>Quick Bundles</strong>
+    </p>
+
+    <h3 style="color:var(--gold); margin-top:18px;">Payment Steps</h3>
+    <ol class="muted" style="margin-top:8px; line-height:1.8;">
+      <li>Dial *170#</li>
+      <li>Select <strong>1. Transfer Money</strong></li>
+      <li>Select <strong>1. MoMo User</strong></li>
+      <li>Enter number: <strong>0534226481</strong></li>
+      <li>Enter amount</li>
+      <li>Enter reference: <strong>Your Name</strong></li>
+      <li>Confirm with your PIN</li>
+    </ol>
+
+    <button class="btn-buy" style="margin-top:20px; width:100%;"
+      onclick="confirmPayment('Payment Confirmation')">
+      Confirm Payment on WhatsApp
+    </button>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div style="font-weight:700;font-size:18px;">Quick Bundles</div>
+    <div class="muted small" style="margin-top:6px;">Fast data bundles • Instant checkers</div>
+  </div>
+
+  <div style="text-align:center;color:var(--muted);font-size:13px;">
+    © 2025 Quick Bundles — All rights reserved
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/233534226481" class="float-whatsapp" target="_blank">
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/233534226481" class="float-whatsapp">
   <img src="whatsapp.png" alt="WhatsApp">
 </a>
 
