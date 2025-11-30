@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,22 +7,57 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
+
+  <style>
+    /* FAQ accordion styling */
+    .faq-list {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      padding: 15px 20px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .faq-item:hover {
+      border-color: var(--gold);
+    }
+
+    .faq-question {
+      font-weight: 700;
+      color: var(--gold);
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 8px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+  </style>
 </head>
-
 <body>
-
-<!-- PRELOADER -->
-<div id="qb-preloader">
-  <div class="qb-spinner">
-    <div class="dot"></div>
-  </div>
-</div>
 
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
-      <img src="logo.png" class="logo" alt="Quick Bundles">
+      <img src="logo.png" class="logo" alt="Quick Bundles logo">
       <div class="brand-name">Quick Bundles</div>
     </div>
 
@@ -32,7 +66,7 @@
       <a href="bundles.html">Bundles</a>
       <a href="checkers.html">Checkers</a>
       <a href="payment.html">Payment</a>
-      <a href="tracking.html">Track Order</a>
+      <a href="tracking.html">Track</a>
       <a href="faq.html" aria-current="page">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -40,104 +74,98 @@
 </header>
 
 <!-- HERO -->
-<section class="hero fade-in">
-  <h2>Frequently Asked Questions</h2>
-  <p class="lead">Quick answers to everything you need to know.</p>
+<section class="hero">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <p class="lead">Quick answers to common questions.</p>
+  </div>
 </section>
 
-<!-- FAQ CONTENT -->
+<!-- FAQ SECTION -->
 <section class="container">
+  <div class="faq-list">
 
-  <div class="section-head slide-left">
-    <h2>General Questions</h2>
-    <p class="muted">Find solutions to the most common questions we receive.</p>
+    <div class="faq-item">
+      <div class="faq-question">
+        How long does delivery take?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Delivery is usually instant after payment. Vouchers and bundles are processed through WhatsApp confirmation.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        What payment method do you accept?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        We currently accept <strong>MTN Mobile Money only</strong>.  
+        Number: <strong>0534226481</strong>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I buy a results checker?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Go to the Checkers page → Choose the type → Click Buy → Confirm on WhatsApp → Make payment → Receive instantly.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Do you offer refunds?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Refunds are only given if a voucher is not delivered after payment verification.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I track my order?
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Yes! Use the Track page and enter your phone number or order ID.
+      </div>
+    </div>
+
   </div>
-
-  <div class="card scale-up">
-    <h4>How fast will I receive my bundle or checker?</h4>
-    <p>Delivery is instant once payment is confirmed. Checkers are sent immediately, and bundles are loaded within minutes.</p>
-  </div>
-
-  <div class="card scale-up">
-    <h4>Do you accept only MTN MoMo?</h4>
-    <p>Yes. We only accept MTN MoMo at the moment. Telecel and AirtelTigo payments are not supported.</p>
-  </div>
-
-  <div class="card scale-up">
-    <h4>What details do I need to buy a checker?</h4>
-    <p>We only need the candidate’s phone number and exam year. Additional details (name/index) help speed up the process.</p>
-  </div>
-
-  <div class="card scale-up">
-    <h4>How do I track my order?</h4>
-    <p>Visit the <a href="tracking.html">Track Order</a> page and enter your order ID or phone number.</p>
-  </div>
-
-  <div class="card scale-up">
-    <h4>Can I buy for someone else?</h4>
-    <p>Yes. Just enter their phone number during checkout.</p>
-  </div>
-
-  <div class="card scale-up">
-    <h4>Do you offer refunds?</h4>
-    <p>If a service is not delivered, you will receive a full refund. Delivered checkers or bundles cannot be refunded.</p>
-  </div>
-
-  <div class="section-head slide-left" style="margin-top:40px;">
-    <h2>Need Help?</h2>
-    <p class="muted">Our support team is available anytime.</p>
-  </div>
-
-  <div class="card scale-up">
-    <p>Click below to chat with us on WhatsApp for quick assistance.</p>
-    <a href="https://wa.me/233534226481" class="btn-buy" style="margin-top:10px;">Chat Support</a>
-  </div>
-
 </section>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <div>
-    <div>
-      <div style="font-weight:700;">Quick Bundles</div>
-      <div style="color:var(--muted);font-size:14px;margin-top:6px;">
-        Fast bundles, instant checkers, and premium digital services.
-      </div>
-    </div>
-
-    <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
-      <div>
-        <div style="font-weight:700;margin-bottom:6px;">Quick Links</div>
-        <div style="display:flex;flex-direction:column;gap:4px;font-size:14px;">
-          <a href="index.html">Home</a>
-          <a href="bundles.html">Bundles</a>
-          <a href="checkers.html">Checkers</a>
-          <a href="tracking.html">Track Order</a>
-          <a href="payment.html">Payment</a>
-          <a href="faq.html">FAQ</a>
-        </div>
-      </div>
-
-      <div>
-        <div style="font-weight:700;margin-bottom:6px;">Contact</div>
-        <div style="font-size:14px;color:var(--muted);">0534226481</div>
-        <a href="mailto:mohammedkabiru104@gmail.com"
-           style="font-size:14px;color:var(--muted);text-decoration:none;margin-top:6px;display:inline-block;">
-          Email Support
-        </a>
-      </div>
-    </div>
+  <div class="container">
+    <div style="font-weight:700;font-size:18px;">Quick Bundles</div>
+    <div class="muted small" style="margin-top:6px;">Fast data bundles • Instant checkers</div>
   </div>
 
-  <div style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;padding-bottom:12px;">
-    © 2025 Quick Bundles • All rights reserved
+  <div style="text-align:center;color:var(--muted);font-size:13px;">
+    © 2025 Quick Bundles — All rights reserved
   </div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/233534226481" class="float-whatsapp" target="_blank">
-  <img src="whatsapp.png" alt="WhatsApp">
+<!-- WHATSAPP -->
+<a href="https://wa.me/233534226481" class="float-whatsapp">
+  <img src="whatsapp.png" alt="">
 </a>
+
+<script>
+  // FAQ Toggle
+  document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+      const q = item.querySelector("span");
+      q.textContent = item.classList.contains("active") ? "−" : "+";
+    });
+  });
+</script>
 
 </body>
 </html>
